@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Mission - My Site</title>
+    <!-- Tailwind CSS CDN pour un style facile -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Police personnalisée pour un aspect propre */
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #f0f2f5; /* Fond gris clair */
+            color: #333; /* Texte plus foncé pour la lisibilité */
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- Section d'en-tête (cohérente avec la page principale) -->
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white shadow-lg p-4">
+        <nav class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold tracking-tight mb-3 md:mb-0">My Awesome Site</a>
+            <ul class="flex space-x-6">
+                <li><a href="index.html#about" class="hover:text-blue-200 transition-colors duration-300">About Us</a></li>
+                <li><a href="index.html#services" class="hover:text-blue-200 transition-colors duration-300">Services</a></li>
+                <li><a href="index.html#portfolio" class="hover:text-blue-200 transition-colors duration-300">Portfolio</a></li>
+                <li><a href="index.html#contact" class="hover:text-blue-200 transition-colors duration-300">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section de contenu principal : Lien vers le PDF via texte et carré -->
+    <main class="flex-grow container mx-auto px-4 py-12 flex flex-col">
+        <!-- La classe max-w-2xl a été retirée pour permettre au texte de s'étendre davantage -->
+        <div class="text-left">
+            <h1 class="text-xl font-extrabold text-gray-900 mb-4">"Widefield quantitative polarized light microscopy using spectrally encoded null polarimetry"</h1>
+            <p class="text-base text-gray-700 mb-6">
+                Hugo Laviec, Matthieu Dubreuil, Sylvain Rivet and Yann Le Grand, University of Brest, Laboratory of Optics and Magnetism OPTIMAG UR 938, F-29200 Brest, France
+            </p>
+
+            <!--
+                IMPORTANT : Remplacez 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf'
+                par l'URL directe de votre fichier PDF réel.
+                Si votre PDF est dans le même répertoire que ce fichier HTML, vous pouvez juste mettre son nom :
+                par exemple, 'mon_document_mission.pdf'
+            -->
+            <a href="Widefield_quantitative_polarized_light_microscopy_.pdf"
+               target="_blank"
+               download="Widefield_quantitative_polarized_light_microscopy.pdf"
+               class="inline-flex items-center text-red-600 hover:text-red-800 font-semibold text-sm transition-colors duration-300"
+               aria-label="Télécharger le document PDF de notre mission"
+            >
+                PDF <span class="ml-1 text-xs">&#9632;</span>
+            </a>
+
+            <div class="mt-8">
+                <a href="index.html" class="inline-block bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-5 rounded-lg shadow transition-colors duration-300">
+                    &larr; Retour à l'accueil
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Section de pied de page (cohérente avec la page principale) -->
+    <footer class="bg-gray-800 text-white p-6 text-center mt-12">
+        <div class="container mx-auto">
+            <p>&copy; 2023 Mon Site Impressionnant. Tous droits réservés.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="hover:text-gray-300 transition-colors duration-300">Politique de confidentialité</a>
+                <a href="#" class="hover:text-gray-300 transition-colors duration-300">Conditions d'utilisation</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
