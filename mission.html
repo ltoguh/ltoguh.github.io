@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Mission - My Awesome Site</title>
-    <!-- Tailwind CSS CDN for easy styling -->
+    <!-- Tailwind CSS CDN pour un style facile -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Custom font for a clean look */
+        /* Police personnalisée pour un aspect propre */
         body {
             font-family: "Inter", sans-serif;
-            background-color: #f0f2f5; /* Light gray background */
-            color: #333; /* Darker text for readability */
+            background-color: #f0f2f5; /* Fond gris clair */
+            color: #333; /* Texte plus foncé pour la lisibilité */
         }
     </style>
 </head>
 <body class="min-h-screen flex flex-col">
 
-    <!-- Header Section (consistent with main page) -->
+    <!-- Section d'en-tête (cohérente avec la page principale) -->
     <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white shadow-lg p-4">
         <nav class="container mx-auto flex flex-col md:flex-row justify-between items-center">
             <a href="index.html" class="text-3xl font-bold tracking-tight mb-3 md:mb-0">My Awesome Site</a>
@@ -30,44 +30,42 @@
         </nav>
     </header>
 
-    <!-- Main Content Section -->
-    <main class="flex-grow container mx-auto px-4 py-12">
-        <div class="bg-white p-8 rounded-xl shadow-lg max-w-4xl mx-auto">
-            <h1 class="text-4xl font-extrabold text-gray-900 mb-6 text-center">Our Mission</h1>
-            <p class="text-lg text-gray-700 mb-6">
-                At **My Awesome Site**, our mission is to empower individuals and businesses through innovative and accessible digital solutions. We believe in harnessing the power of technology to create intuitive, efficient, and impactful experiences that drive progress and foster connection.
+    <!-- Section de contenu principal : Lien vers le PDF -->
+    <main class="flex-grow container mx-auto px-4 py-12 flex flex-col items-center justify-center">
+        <div class="bg-white p-8 rounded-xl shadow-lg max-w-2xl mx-auto text-center">
+            <h1 class="text-4xl font-extrabold text-gray-900 mb-6">Notre Mission</h1>
+            <p class="text-lg text-gray-700 mb-8">
+                Cliquez sur le bouton ci-dessous pour télécharger ou visualiser notre document de mission complet au format PDF.
             </p>
-            <p class="text-lg text-gray-700 mb-6">
-                We are committed to delivering high-quality products and services that not only meet but exceed the expectations of our users. Our approach is rooted in continuous learning, agile development, and a deep understanding of the challenges our community faces.
-            </p>
-            <p class="text-lg text-gray-700 mb-6">
-                Our core values guide everything we do:
-            </p>
-            <ul class="list-disc list-inside text-lg text-gray-700 space-y-2 mb-8 pl-4">
-                <li>**Innovation:** Constantly seeking new ways to solve problems and improve user experiences.</li>
-                <li>**Integrity:** Operating with transparency, honesty, and ethical practices in all our endeavors.</li>
-                <li>**Customer Focus:** Prioritizing the needs and feedback of our users to build lasting relationships.</li>
-                <li>**Excellence:** Striving for the highest standards in product development and service delivery.</li>
-                <li>**Collaboration:** Fostering an environment where ideas are shared and teamwork thrives.</li>
-            </ul>
-            <p class="text-lg text-gray-700 mb-6">
-                Through our dedication to these principles, we aim to be a catalyst for positive change, helping our clients achieve their goals and contribute to a more connected and efficient world.
-            </p>
-            <div class="text-center">
-                <a href="index.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition-colors duration-300">
-                    &larr; Back to Home
+            <!--
+                IMPORTANT : Remplacez 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf'
+                par l'URL directe de votre fichier PDF réel.
+                Si votre PDF est dans le même répertoire que ce fichier HTML, vous pouvez simplement mettre son nom :
+                par exemple, 'mon_document_mission.pdf'
+            -->
+            <a href="elife-55502-v2.pdf"
+               target="_blank"
+               class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition-colors duration-300 transform hover:scale-105"
+               download="Notre_Mission_Document.pdf"
+            >
+                Télécharger / Voir le document de mission (PDF) &#128462;
+            </a>
+
+            <div class="mt-8">
+                <a href="index.html" class="inline-block bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-5 rounded-lg shadow transition-colors duration-300">
+                    &larr; Retour à l'accueil
                 </a>
             </div>
         </div>
     </main>
 
-    <!-- Footer Section (consistent with main page) -->
+    <!-- Section de pied de page (cohérente avec la page principale) -->
     <footer class="bg-gray-800 text-white p-6 text-center mt-12">
         <div class="container mx-auto">
-            <p>&copy; 2023 My Awesome Site. All rights reserved.</p>
+            <p>&copy; 2023 Mon Site Impressionnant. Tous droits réservés.</p>
             <div class="flex justify-center space-x-6 mt-4">
-                <a href="#" class="hover:text-gray-300 transition-colors duration-300">Privacy Policy</a>
-                <a href="#" class="hover:text-gray-300 transition-colors duration-300">Terms of Service</a>
+                <a href="#" class="hover:text-gray-300 transition-colors duration-300">Politique de confidentialité</a>
+                <a href="#" class="hover:text-gray-300 transition-colors duration-300">Conditions d'utilisation</a>
             </div>
         </div>
     </footer>
