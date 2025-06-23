@@ -30,26 +30,27 @@
         </nav>
     </header>
 
-    <!-- Section de contenu principal : Lien vers le PDF -->
-    <main class="flex-grow container mx-auto px-4 py-12 flex flex-col items-center justify-center">
-        <div class="bg-white p-8 rounded-xl shadow-lg max-w-2xl mx-auto text-center">
-            <h1 class="text-4xl font-extrabold text-gray-900 mb-6">"Widefield quantitative polarized light microscopy
- using spectrally encoded null polarimetry"</h1>
-            <p class="text-lg text-gray-700 mb-8">
-                Hugo Laviec, Matthieu Dubreuil, Sylvain Rivet and Yann Le Grand, University of Brest,  Laboratory of Optics and Magnetism OPTIMAG UR 938, F-29200 Brest, France
+    <!-- Section de contenu principal : Lien vers le PDF via texte et carré -->
+    <main class="flex-grow container mx-auto px-4 py-12 flex flex-col">
+        <div class="max-w-2xl text-left">
+            <h1 class="text-xl font-extrabold text-gray-900 mb-4">Notre Mission</h1>
+            <p class="text-base text-gray-700 mb-6">
+                Cliquez sur le lien ci-dessous pour télécharger ou visualiser notre document de mission complet au format PDF.
             </p>
+
             <!--
                 IMPORTANT : Remplacez 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf'
                 par l'URL directe de votre fichier PDF réel.
-                Si votre PDF est dans le même répertoire que ce fichier HTML, vous pouvez simplement mettre son nom :
+                Si votre PDF est dans le même répertoire que ce fichier HTML, vous pouvez juste mettre son nom :
                 par exemple, 'mon_document_mission.pdf'
             -->
             <a href="Widefield_quantitative_polarized_light_microscopy_.pdf"
                target="_blank"
-               class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition-colors duration-300 transform hover:scale-105"
-               download="Notre_Mission_Document.pdf"
+               download="Widefield_quantitative_polarized_light_microscopy.pdf"
+               class="inline-flex items-center text-red-600 hover:text-red-800 font-semibold text-sm transition-colors duration-300"
+               aria-label="Télécharger le document PDF de notre mission"
             >
-                Télécharger / Voir le document de mission (PDF) &#128462;
+                PDF <span class="ml-1 text-xs">&#9632;</span>
             </a>
 
             <div class="mt-8">
