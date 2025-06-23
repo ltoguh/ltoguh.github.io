@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clickable Sections Page</title>
-    <!-- Tailwind CSS CDN for easy styling -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         /* Custom font for a clean look */
         body {
@@ -17,7 +17,6 @@
 </head>
 <body class="min-h-screen flex flex-col">
 
-    <!-- Header Section with Navigation -->
     <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white shadow-lg p-4">
         <nav class="container mx-auto flex flex-col md:flex-row justify-between items-center">
             <a href="#" class="text-3xl font-bold tracking-tight mb-3 md:mb-0">My Site</a>
@@ -30,77 +29,63 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <main class="flex-grow container mx-auto px-4 py-12 text-center">
         <h1 class="text-5xl font-extrabold text-gray-900 mb-6 leading-tight">Welcome to Our Innovative Platform</h1>
         <p class="text-xl text-gray-700 max-w-3xl mx-auto mb-10">
             Explore our solutions designed to empower your business and simplify your life. Click on a section below to learn more!
         </p>
 
-        <!-- Clickable Sections Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <!-- Section 1: Our Mission -->
             <a href="mission.html" class="block bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
                 <div class="text-blue-600 text-6xl mb-4 group-hover:text-blue-700 transition-colors duration-300">
-                    &#128640; <!-- Rocket Emoji for icon -->
-                </div>
+                    <i class="fas fa-file-alt"></i> </div>
                 <h2 class="text-3xl font-semibold text-gray-800 mb-3 group-hover:text-blue-800 transition-colors duration-300">Publications</h2>
                 <p class="text-gray-600 text-lg">
                     Discover our core values and what drives us to deliver excellence.
                 </p>
             </a>
 
-            <!-- Section 2: Our Products -->
             <a href="products.html" class="block bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
                 <div class="text-green-600 text-6xl mb-4 group-hover:text-green-700 transition-colors duration-300">
-                    &#128187; <!-- Laptop Emoji for icon -->
-                </div>
-                <h2 class="text-3xl font-semibold text-gray-800 mb-3 group-hover:text-green-800 transition-colors duration-300">Our Products</h2>
+                    <i class="fas fa-chalkboard-teacher"></i> </div>
+                <h2 class="text-3xl font-semibold text-gray-800 mb-3 group-hover:text-green-800 transition-colors duration-300">Conferences</h2>
                 <p class="text-gray-600 text-lg">
                     Browse our range of cutting-edge products tailored for your needs.
                 </p>
             </a>
 
-            <!-- Section 3: Customer Stories -->
             <a href="stories.html" class="block bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
                 <div class="text-purple-600 text-6xl mb-4 group-hover:text-purple-700 transition-colors duration-300">
-                    &#128101; <!-- People Emoji for icon -->
-                </div>
-                <h2 class="text-3xl font-semibold text-gray-800 mb-3 group-hover:text-purple-800 transition-colors duration-300">Customer Stories</h2>
+                    <i class="fas fa-laptop-code"></i> </div>
+                <h2 class="text-3xl font-semibold text-gray-800 mb-3 group-hover:text-purple-800 transition-colors duration-300">Numerical simulations</h2>
                 <p class="text-gray-600 text-lg">
                     Read testimonials and success stories from our satisfied clients.
                 </p>
             </a>
 
-            <!-- Section 4: Get Started -->
             <a href="get-started.html" class="block bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
                 <div class="text-orange-600 text-6xl mb-4 group-hover:text-orange-700 transition-colors duration-300">
-                    &#128220; <!-- Clipboard Emoji for icon -->
-                </div>
-                <h2 class="text-3xl font-semibold text-gray-800 mb-3 group-hover:text-orange-800 transition-colors duration-300">Get Started</h2>
+                    <i class="fas fa-microscope"></i> </div>
+                <h2 class="text-3xl font-semibold text-gray-800 mb-3 group-hover:text-orange-800 transition-colors duration-300">Optical microscopy</h2>
                 <p class="text-gray-600 text-lg">
                     Begin your journey with us today and explore new possibilities.
                 </p>
             </a>
 
-            <!-- Section 5: FAQs -->
             <a href="faq.html" class="block bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
                 <div class="text-red-600 text-6xl mb-4 group-hover:text-red-700 transition-colors duration-300">
-                    &#10067; <!-- Question Mark Emoji for icon -->
-                </div>
-                <h2 class="text-3xl font-semibold text-gray-800 mb-3 group-hover:text-red-800 transition-colors duration-300">FAQs</h2>
+                    <i class="fas fa-user-graduate"></i> </div>
+                <h2 class="text-3xl font-semibold text-gray-800 mb-3 group-hover:text-red-800 transition-colors duration-300">CV</h2>
                 <p class="text-gray-600 text-lg">
                     Find answers to the most frequently asked questions about our services.
                 </p>
             </a>
 
-            <!-- Section 6: Our Blog -->
             <a href="blog.html" class="block bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
                 <div class="text-teal-600 text-6xl mb-4 group-hover:text-teal-700 transition-colors duration-300">
-                    &#128214; <!-- Open Book Emoji for icon -->
-                </div>
-                <h2 class="text-3xl font-semibold text-gray-800 mb-3 group-hover:text-teal-800 transition-colors duration-300">Our Blog</h2>
+                    <i class="fas fa-book-reader"></i> </div>
+                <h2 class="text-3xl font-semibold text-gray-800 mb-3 group-hover:text-teal-800 transition-colors duration-300">Teaching</h2>
                 <p class="text-gray-600 text-lg">
                     Stay updated with our latest news, articles, and insights.
                 </p>
@@ -109,7 +94,6 @@
         </div>
     </main>
 
-    <!-- Footer Section -->
     <footer class="bg-gray-800 text-white p-6 text-center mt-12">
         <div class="container mx-auto">
             <p>&copy; 2023 My Site. All rights reserved.</p>
