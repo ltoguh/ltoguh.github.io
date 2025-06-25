@@ -3,16 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>liste_of_simulations</title>
+    <title>Our Mission - My Site</title>
+    <!-- Tailwind CSS CDN pour un style facile -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Police personnalisée pour un aspect propre */
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #f0f2f5; /* Fond gris clair */
+            color: #333; /* Texte plus foncé pour la lisibilité */
+        }
+    </style>
 </head>
-<body>
-    <a href="simul_airy.html" class="block bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
-                <div class="text-black text-6xl mb-4 group-hover:text-gray-800 transition-colors duration-300">
-                    <i class="fas fa-laptop-code"></i> </div>
-                <h2 class="text-3xl font-semibold text-gray-800 mb-3 group-hover:text-black-800 transition-colors duration-300">Numerical simulations</h2>
-                <p class="text-gray-600 text-lg">
-                    Different optical microscopy numerical simulations results and code.
-                </p>
+<body class="min-h-screen flex flex-col">
+
+    <!-- Section d'en-tête (cohérente avec la page principale) -->
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white shadow-lg p-4">
+        <nav class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold tracking-tight mb-3 md:mb-0">My Awesome Site</a>
+            <ul class="flex space-x-6">
+                <li><a href="index.html#about" class="hover:text-blue-200 transition-colors duration-300">About Us</a></li>
+                <li><a href="index.html#services" class="hover:text-blue-200 transition-colors duration-300">Services</a></li>
+                <li><a href="index.html#portfolio" class="hover:text-blue-200 transition-colors duration-300">Portfolio</a></li>
+                <li><a href="index.html#contact" class="hover:text-blue-200 transition-colors duration-300">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section de contenu principal : Lien vers le PDF via texte et carré -->
+    <main class="flex-grow container mx-auto px-4 py-12 flex flex-col">
+        <!-- La classe max-w-2xl a été retirée pour permettre au texte de s'étendre davantage -->
+        <div class="text-left">
+            <h1 class="text-xl font-extrabold text-gray-900 mb-4">"MICROSCOPIE DE BIREFRINGENCE A BALAYAGE LASER ET PLEIN CHAMP PAR
+CODAGE SPECTRAL DE LA POLARISATION"</h1>
+            <p class="text-base text-gray-700 mb-6">
+                Hugo Laviec<sup>1</sup>, Xavier Theillier<sup>2</sup>, Sylvain Rivet<sup>1</sup>, Matthieu Dubreuil<sup>1</sup> and Yann Le Grand<sup>1</sup> <BR>
+                <sup>1</sup>University of Brest, Laboratory of Optics and Magnetism OPTIMAG UR 938, F-29200 Brest, France <BR>
+                <sup>2</sup>Department of Physics and Bernal Institute, University of Limerick, V94 T9PX Limerick, Ireland
+            </p>
+            
+            <!--
+                IMPORTANT : Remplacez 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf'
+                par l'URL directe de votre fichier PDF réel.
+                Si votre PDF est dans le même répertoire que ce fichier HTML, vous pouvez juste mettre son nom :
+                par exemple, 'mon_document_mission.pdf'
+            -->
+            <a href="Optique Normandie 2024 Optimag_VF.pdf"
+               target="_blank"
+               download="Optique Normandie 2024 Optimag_VF.pdf"
+               class="inline-flex items-center text-red-600 hover:text-red-800 font-semibold text-sm transition-colors duration-300"
+               aria-label="Télécharger le document PDF de notre mission"
+            >
+                PDF <span class="ml-1 text-xs">&#9632;</span>
             </a>
+
+
+            
+             <h1 class="text-xl font-extrabold text-gray-900 mb-4">"Widefield sensitive birefringence microscopy by spectral 
+encoding of the polarization"</h1>
+            <p class="text-base text-gray-700 mb-6">
+                Hugo Laviec, Sylvain Rivet, Matthieu Dubreuil, Mikhail Indenbom, Bruno Boulbry and Yann Le Grand <BR>
+                 University of Brest, Laboratory of Optics and Magnetism OPTIMAG UR 938, F-29200 Brest, France
+            </p>
+            
+            <!--
+                IMPORTANT : Remplacez 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf'
+                par l'URL directe de votre fichier PDF réel.
+                Si votre PDF est dans le même répertoire que ce fichier HTML, vous pouvez juste mettre son nom :
+                par exemple, 'mon_document_mission.pdf'
+            -->
+            <a href="OPTIMAG_LAVIEC_Hugo_JED_2025.pdf"
+               target="_blank"
+               download="OPTIMAG_LAVIEC_Hugo_JED_2025.pdf"
+               class="inline-flex items-center text-red-600 hover:text-red-800 font-semibold text-sm transition-colors duration-300"
+               aria-label="Télécharger le document PDF de notre mission"
+            >
+                PDF <span class="ml-1 text-xs">&#9632;</span>
+            </a>
+            
+
+
+            <h1 class="text-xl font-extrabold text-gray-900 mb-4">"Microscopie de polarisation plein champ sensible par codage spectral 
+de la polarisation "</h1>
+            <p class="text-base text-gray-700 mb-6">
+                Hugo Laviec, Xavier Theillier, Sylvain Rivet, Matthieu Dubreuil and Yann Le Grand <BR>
+                University of Brest, Laboratory of Optics and Magnetism OPTIMAG UR 938, F-29200 Brest, France
+            </p>
+            
+            <!--
+                IMPORTANT : Remplacez 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf'
+                par l'URL directe de votre fichier PDF réel.
+                Si votre PDF est dans le même répertoire que ce fichier HTML, vous pouvez juste mettre son nom :
+                par exemple, 'mon_document_mission.pdf'
+            -->
+            <a href="Resume_Laviec_OPTIMAG.pdf"
+               target="_blank"
+               download="Resume_Laviec_OPTIMAG.pdf"
+               class="inline-flex items-center text-red-600 hover:text-red-800 font-semibold text-sm transition-colors duration-300"
+               aria-label="Télécharger le document PDF de notre mission"
+            >
+                PDF <span class="ml-1 text-xs">&#9632;</span>
+            </a>
+
+            <div class="mt-8">
+                <a href="index.html" class="inline-block bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-5 rounded-lg shadow transition-colors duration-300">
+                    &larr; Retour à l'accueil
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Section de pied de page (cohérente avec la page principale) -->
+    <footer class="bg-gray-800 text-white p-6 text-center mt-12">
+        <div class="container mx-auto">
+            <p>&copy; 2023 Mon Site Impressionnant. Tous droits réservés.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="hover:text-gray-300 transition-colors duration-300">Politique de confidentialité</a>
+                <a href="#" class="hover:text-gray-300 transition-colors duration-300">Conditions d'utilisation</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
