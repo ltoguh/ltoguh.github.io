@@ -8,56 +8,39 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-/* Reset box-sizing for consistency */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+        /* Custom font for a clean look */
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: white; /* Light gray background */
+            color: black; /* Darker text for readability */
+            
+        }
+        
+        
+        .banniere {
+			background-image: url("Pink_Panther.png");        
+        }
+        
+        .blocid {
+			display: flex;        
+        }
+        
+        .texetbloc {
+			width: 20%        
+        }
+        
 
-/* Custom font and base styles */
-body {
-    font-family: "Inter", sans-serif;
-    background-color: white;
-    color: black;
-    line-height: 1.6;
-}
+			.left {
+  				width: 25%;
+			}
 
-/* Banner image */
-.banniere {
-    background-image: url("Pink_Panther.png");
-    background-size: cover;       /* Ensure it covers the whole container */
-    background-position: center;  /* Center the image */
-    height: 300px;                /* Adjust height as needed */
-    width: 100%;
-}
-
-/* Flex container for blocks */
-.blocid {
-    display: flex;
-    flex-wrap: wrap;              /* Wrap on small screens */
-    gap: 1rem;                    /* Consistent spacing */
-}
-
-/* Text block inside the flex container */
-.texetbloc {
-    flex: 1 1 20%;                /* Flexible width, min 20% */
-    min-width: 150px;             /* Avoid too small blocks on tiny screens */
-}
-
-/* Left and right sections */
-.left {
-    flex: 1 1 25%;                 /* Flexible 25% width */
-    min-width: 200px;
-}
-
-.right {
-    flex: 1 1 75%;                 /* Flexible 75% width */
-    margin-top: 2.5rem;           /* ~40px equivalent in rems */
-    margin-right: 2rem;            /* ~30px in rems */
-}
-
-/* Optional: make layout responsive */
+			.right {
+  				width: 75%;
+  				margin-top: 40px;
+  				margin-right: 30px;
+			}
+			
+			/* Optional: make layout responsive */
 @media (max-width: 768px) {
     .blocid {
         flex-direction: column;
@@ -68,7 +51,9 @@ body {
         margin-top: 1rem;
     }
 }
-</style>
+
+        
+    </style>
 </head>
 
 	<header class="bg-black text-white p-4">
