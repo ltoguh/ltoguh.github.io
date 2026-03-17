@@ -33,16 +33,17 @@
             padding-right: 30px; /* déplacé ici depuis .right */
         }
 
-        .left {
-            flex: 0 0 25%;
-            width: 25%;
-        }
+			.left {
+    flex: 0 0 25%;  /* ne grandit pas, ne rétrécit pas, reste à 25% */
+    min-width: 0;
+}
 
-        .right {
-            flex: 1;
-            margin-top: 40px;
-            /* margin-right supprimé — remplacé par padding-right sur .blocid */
-        }
+.right {
+    flex: 1 1 0;    /* prend le reste */
+    min-width: 0;   /* empêche le contenu de forcer l'expansion */
+    margin-top: 40px;
+    overflow-wrap: break-word; /* évite qu'un long mot déborde */
+}
 
         .container i {
             margin: 5px;
