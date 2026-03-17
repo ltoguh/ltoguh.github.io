@@ -1,129 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Hugo Laviec</title>
+    <title>Hugo Laviec | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <style>
-        *, *::before, *::after {
-            box-sizing: border-box;
-        }
-
-        html, body {
-            width: 100%;
-            overflow-x: hidden;
-        }
-
-        body {
-            font-family: "Inter", sans-serif;
-            background-color: white;
-            color: black;
-        }
-
-        .banniere {
-            background-image: url("Pink_Panther.png");
-        }
-
-        .blocid {
-            display: flex;
-            width: 100%;
-            padding-right: 30px; /* déplacé ici depuis .right */
-        }
-
-			.left {
-    flex: 0 0 25%;  /* ne grandit pas, ne rétrécit pas, reste à 25% */
-    min-width: 0;
-}
-
-.right {
-    flex: 1 1 0;    /* prend le reste */
-    min-width: 0;   /* empêche le contenu de forcer l'expansion */
-    margin-top: 40px;
-    overflow-wrap: break-word; /* évite qu'un long mot déborde */
-}
-
-        .container i {
-            margin: 5px;
-        }
-
-        @media (max-width: 768px) {
-            .blocid {
-                flex-direction: column;
-                padding-right: 15px;
-                padding-left: 15px;
-            }
-            .left, .right {
-                flex: 1 1 100%;
-                width: 100%;
-                margin-right: 0;
-                margin-top: 1rem;
-            }
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
     </style>
 </head>
+<body class="bg-white text-gray-900 flex flex-col min-h-screen">
 
-<body>
-
-    <header class="bg-black text-white p-4">
-        <nav class="container flex flex-col md:flex-row justify-between items-center">
-            <ul class="flex space-x-6">
-                <li><a href="resume/resume.html" class="font-bold hover:text-gray-400 transition-colors duration-300">Portfolio</a></li>
-                <li><a href="research/research.html" class="font-bold hover:text-gray-400 transition-colors duration-300">Research</a></li>
-                <li><a href="numerical_simulations/simulations.html" class="font-bold hover:text-gray-400 transition-colors duration-300">Numerical simulations</a></li>
-                <li><a href="microscopy/microscopy.html" class="font-bold hover:text-gray-400 transition-colors duration-300">Microscopy</a></li>
-                <li><a href="various_topics/topics.html" class="font-bold hover:text-gray-400 transition-colors duration-300">Various topics</a></li>
-                <li><a href="#ancre contact" class="font-bold hover:text-gray-400 transition-colors duration-300">Contact</a></li>
+    <header class="bg-black text-white sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <ul class="flex flex-wrap justify-center md:justify-start gap-6 text-sm uppercase tracking-wider">
+                <li><a href="resume/resume.html" class="font-bold hover:text-blue-400 transition">Portfolio</a></li>
+                <li><a href="research/research.html" class="font-bold hover:text-blue-400 transition">Research</a></li>
+                <li><a href="numerical_simulations/simulations.html" class="font-bold hover:text-blue-400 transition">Simulations</a></li>
+                <li><a href="microscopy/microscopy.html" class="font-bold hover:text-blue-400 transition">Microscopy</a></li>
+                <li><a href="various_topics/topics.html" class="font-bold hover:text-blue-400 transition">Topics</a></li>
+                <li><a href="#contact" class="font-bold hover:text-blue-400 transition">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-
-        <section class="blocid">
-            <div class="left">
-                <h1 style="font-size: 50px; margin-left: 50px;"><strong>Hugo Laviec</strong></h1>
-                <img src="images/me.jpg" alt="its me in Russia" height="300" width="300" style="margin-left: 50px;">
-                <p style="margin-left: 50px; margin-right: 13px; margin-top: 5px; font-size: 14px;">
-                    Welcome to my personal website, here you'll <br>find my portfolio, my research interests and<br>some of my results.
-                </p>
-
-                <div class="container" style="margin-left: 70px; margin-top: 10px;">
-                    <span><a href="https://www.researchgate.net/profile/Hugo-Laviec?ev=hdr_xprf&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6ImhvbWUiLCJwYWdlIjoiaG9tZSIsInBvc2l0aW9uIjoiZ2xvYmFsSGVhZGVyIn19"><i class="fab fa-researchgate fa-3x"></i></a></span>
-                    <span><a href="https://github.com/ltoguh"><i class="fab fa-github fa-3x"></i></a></span>
-                    <span><a href="https://www.youtube.com"><i class="fab fa-orcid fa-3x"></i></a></span>
-                    <span><a href="https://scholar.google.com/citations?user=B_4-ntoAAAAJ&hl=fr&oi=ao"><i class="fab fa-google-scholar fa-3x"></i></a></span>
+    <main class="container mx-auto px-6 py-12 flex-grow">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+            
+            <aside class="md:col-span-4 flex flex-col items-center md:items-start text-center md:text-left space-y-6">
+                <h1 class="text-5xl font-extrabold leading-tight">Hugo Laviec</h1>
+                
+                <div class="w-64 h-64 overflow-hidden rounded-lg shadow-xl">
+                    <img src="images/me.jpg" alt="Hugo Laviec" class="w-full h-full object-cover shadow-inner bg-gray-200">
                 </div>
-            </div>
 
-            <div class="right">
-                <h1 style="font-size: 30px; font-weight: bold;">About me</h1>
-                <p>
-                    My name is Hugo Laviec, I am a third year Ph.D. student at the University of Brest (France) where I completed all my studies. I am currently working on the development of new optical imaging modalities and their applications to bioimaging in collaborations with biologists of the University of Brest. <br><br>
-                    Since the first course of biophotonics followed during my Master's degrees, my interest for original and innovative imaging techniques has grown. The rich history of microscopy and its developments, both theoretical and experimental, have become my favorite field of physics. I love to learn about new (or old) microscopy techniques allowing for revealing
-                    interesting contrasts on biological samples. Through the guidance of my thesis supervisors and in collaboration with biologists at the University of Brest, I gained a deeper understanding of the need for new techniques and their applications in biology.
+                <p class="text-gray-600 leading-relaxed max-w-xs">
+                    Welcome to my personal website. Here you'll find my portfolio, my research interests, and some of my scientific results.
                 </p>
-                <br>
-                <h1 style="font-size: 30px; font-weight: bold;">Postdoc</h1>
-                <p>I am currently looking for a Postdoc position in bioimaging in Germany, with a preference for optical or X-ray imaging in a multidisciplinary environment.</p>
-            </div>
-        </section>
 
+                <div class="flex gap-4 text-gray-800">
+                    <a href="https://www.researchgate.net/profile/Hugo-Laviec" class="hover:text-blue-600 transition text-3xl"><i class="fab fa-researchgate"></i></a>
+                    <a href="https://github.com/ltoguh" class="hover:text-gray-600 transition text-3xl"><i class="fab fa-github"></i></a>
+                    <a href="#" class="hover:text-green-600 transition text-3xl"><i class="fab fa-orcid"></i></a>
+                    <a href="https://scholar.google.com/citations?user=B_4-ntoAAAAJ" class="hover:text-blue-500 transition text-3xl"><i class="fab fa-google-scholar"></i></a>
+                </div>
+            </aside>
+
+            <section class="md:col-span-8 space-y-8 pt-4">
+                <div>
+                    <h2 class="text-3xl font-bold mb-4 border-b-2 border-black inline-block">About me</h2>
+                    <p class="text-lg leading-relaxed text-gray-700">
+                        My name is <strong>Hugo Laviec</strong>, I am a third-year Ph.D. student at the University of Brest (France). 
+                        I am currently working on the development of new optical imaging modalities and their applications to bioimaging 
+                        in collaboration with biologists.
+                    </p>
+                    <p class="mt-4 text-lg leading-relaxed text-gray-700">
+                        Since my first biophotonics course during my Master's, my interest in innovative imaging techniques has only grown. 
+                        The rich history of microscopy, both theoretical and experimental, is my favorite field of physics. 
+                        I enjoy exploring new (and old) techniques that reveal unique contrasts in biological samples.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-black">
+                    <h2 class="text-2xl font-bold mb-2 uppercase tracking-tight">Postdoc Opportunity</h2>
+                    <p class="text-gray-700">
+                        I am currently seeking a <strong>Postdoc position in bioimaging in Germany</strong>. 
+                        I have a strong interest in optical or X-ray imaging within multidisciplinary environments.
+                    </p>
+                </div>
+            </section>
+        </div>
     </main>
 
-    <footer class="bg-black text-white p-6" id="ancre contact">
-        <p><strong>Mail:</strong> laviechugo@protonmail.com</p>
-        <p>Last modification: <span id="last-mod"></span></p>
-        <script>
-            const date = new Date(document.lastModified);
-            const formattedDate = date.getDate().toString().padStart(2,'0') + '/' +
-                                  (date.getMonth()+1).toString().padStart(2,'0') + '/' +
-                                  date.getFullYear();
-            document.getElementById('last-mod').textContent = formattedDate;
-        </script>
+    <footer id="contact" class="bg-black text-white py-10">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <div>
+                    <p class="text-lg"><strong>Email:</strong> <a href="mailto:laviechugo@protonmail.com" class="underline hover:text-blue-400">laviechugo@protonmail.com</a></p>
+                </div>
+                <p class="text-gray-400 text-sm">
+                    Last update: <span id="last-mod" class="text-white"></span>
+                </p>
+            </div>
+        </div>
     </footer>
 
+    <script>
+        const date = new Date(document.lastModified);
+        document.getElementById('last-mod').textContent = date.toLocaleDateString('en-GB');
+    </script>
 </body>
 </html>
