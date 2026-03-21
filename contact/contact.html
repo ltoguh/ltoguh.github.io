@@ -2,41 +2,85 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8"> <!-- encodage du fichier -->
+<meta charset="UTF-8"> <!-- encodage du fichier -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Hugo Laviec</title>
+    <title>Site Hugo Laviec</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        /* Custom font for a clean look */
-        body {
-            font-family: "Inter", sans-serif;
-            background-color: #ffffff; /* Light gray background */
-            color: #333; /* Darker text for readability */
+        
+        h1 {
+			font-size: 40px !important;      
+			font-weight:bold !important;   
         }
+        
+ 
+		main {
+		margin-left: 100px;		
+		}
+		
+		img {
+		margin-top: 500px;
+		margin: auto;}
+	
+.social-icons {
+    display: flex;          /* Active le mode Flexbox */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center;     /* Centre verticalement (si la div a une hauteur) */
+    gap: 30px;              /* Ajoute de l'espace entre tes icônes sans marges complexes */
+    margin: 20px 0;         /* Espace au-dessus et en-dessous */
+}
+	
     </style>
 </head>
 
-	<header>
-		<p>Contact</p>
-    </header>
+	<header class="bg-black text-white p-4">
+        <nav class="container flex flex-col md:flex-row justify-between items-center">
 
+            <ul class="flex space-x-6">
+					<li><a href="../index.html" class="font-bold hover:text-gray-400 transition-colors duration-300">Home page</a></li>
+					<li><a href="../resume/resume.html" class="font-bold hover:text-gray-400 transition-colors duration-300">Portfolio</a></li>
+                <li><a href="../research/research.html" class="font-bold hover:text-gray-400 transition-colors duration-300">Research</a></li>
+                <li><a href="../numerical_simulations/simulations.html" class="font-bold hover:text-gray-400 transition-colors duration-300">Numerical simulations</a></li>
+                <li><a href="../various_topics/topics.html" class="font-bold hover:text-gray-400 transition-colors duration-300">Various topics</a></li>
+            </ul>
+        </nav>
+    </header>
+    
 <body>
-	
+
 	<main>
+		<h1 style="text-align: center;">Feel free to contact me !</h1>
 		
-		Test page 2
+<div class="social-icons">
+    <a href="https://www.researchgate.net/profile/Hugo-Laviec">
+        <i class="fab fa-researchgate fa-5x"></i>
+    </a>
+    <a href="https://github.com/ltoguh">
+        <i class="fab fa-github fa-5x"></i>
+    </a>
+    <a href="#">
+        <i class="fab fa-orcid fa-5x"></i>
+    </a>
+    <a href="https://scholar.google.com/citations?user=B_4-ntoAAAAJ">
+        <i class="fab fa-google-scholar fa-5x"></i>
+    </a>
+</div>
+      <p style="font-size: 30px; text-align: center;" > <strong> Mail:</strong> laviechugo@protonmail.com</p>
+      
+      <img style="margin-top: 20px;" src="../images/fluo_crop.png" alt="image de cellules en fluo">
 		
-		<a href="/main.html#mon ancre"> Retour</a>
 	
 	</main>
+	<br>
+		<footer class="bg-black text-white p-6" id="ancre contact">
 	
-	<footer>
+	<p> <strong> Mail:</strong> laviechugo@protonmail.com </p>
 	
 	</footer>
 	
+
 </body>
 </html>
-	
-	
+
 
